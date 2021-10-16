@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="DEXCostas.css">
+    <link rel="stylesheet" href="DEXFrente.css">
+</head>
+<body>
+    <div class="header_menu"> 
+        <header class="header">
+            <h1> POKEDEX </h1>
+            <img src="../Imgs/pokebola.gif" id="poke_gif">
+        </header>
+    
+        <nav class="menu-opc">
+            <a href="../index.html" class="poked opc"> HOME PAGE</a>
+            <a href="" class="historia opc"> HISTORIA </a>
+            <a href="" class="regioes opc"> REGIOES </a>
+        </nav>
+    </div>
+    
+    <div class="pokedex">
+
+        <div id="conteudo_costas">
+            <div id="dex_back_borda">
+                <div id="dex_back">
+                    <div id="container_obj_centro_borda">
+                        <div id="container_obj_centro">
+                            <div id="tela_borda">
+                                <div id="tela">
+                                    <div id="tela_img">
+                                        <img id="tela_imgPkm">
+                                        <div id="identificacao"></div>
+                                    </div>
+                                    <div id="vidro" class="V1"></div>
+                                    <div id="vidro" class="V2"></div>
+                                    <div id="vidro" class="V3"></div>
+                                </div>
+                            </div>
+
+                            <form id="muda_sprites">
+                                <button id="mudar_sprites"> SHINY VERSION </button>
+                            </form>
+
+                            <div id="info_pkm">
+                                <div id="nome_pkm"></div>
+                                <div id="info_Adicional">
+                                    <div id="peso_pkm"></div>
+                                    <div id="altura_pkm"></div>
+                                </div>
+                                <div id="info_Adicional">
+                                    <div id="tipagem"></div>
+                                </div>
+                                <div id="vidro" class="V1"></div>
+                                <div id="vidro" class="V2"></div>
+                                <div id="vidro" class="V3"></div>
+                            </div>
+
+                            <div id="lateral_engrenagem"> 
+                                <div id="engrenagem_borda">
+                                    <div id="engrenagem">
+                                        <div id="mecanismo"></div>
+                                        <div id="mecanismo"></div>
+                                        <div id="mecanismo"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div id="parte_cima_borda">
+                        <div id="parte_cima">
+                            <div id="circulo_externo_borda">
+                                <div id="circulo_externo">
+                                    <button id="circulo_interno_borda">
+                                        <div id="circulo_interno">
+                                            <div id="sombreamento"> 
+                                                <div id="brilho_vidro"> </div> 
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                            <div id="container_leds">
+                                <div id="leds_borda">
+                                    <div class="led" id="blue">
+                                        <div id="brilho_vidro_leds"></div>
+                                    </div>
+                                </div>
+                                <div id="leds_borda">
+                                    <div class="led" id="green">
+                                        <div id="brilho_vidro_leds"></div>
+                                    </div>
+                                </div>
+                                <div id="leds_borda">
+                                    <div class="led" id="yellow">
+                                        <div id="brilho_vidro_leds"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="conteudo_frente">
+            <div id="conteudo_frente_1">
+    
+                <div id="dex_outside_borda">
+                    <div id="dex_outside">
+                        <div id="seta_borda">
+                            <div id="seta"></div>
+                        </div>
+                        <img src="./Imgs/pikachu.png" alt="">
+                    </div>
+                </div>
+    
+                <div  id="dex_inside_borda">
+                    <div id="dex_inside">
+                        <form id="pesquisa">
+                            <input type="text" id="busca" placeholder="PROCURE PELO POKEMON" autocomplete='off' onkeyup = "filtrar(event.target)">
+                            <button id="btn">
+                                <div id="btn_lupa">
+                                    <div id="lupa_vidro">
+                                        <div id="lupa_brilho"></div>
+                                    </div>
+                                </div>
+                                <div id="cabo_lupa"></div>
+                            </button>
+                        </form>
+
+                        <div id="container_pokemons"></div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <script src="animDEX.js"></script>
+    <script src="scriptAPI.js"></script>
+</body>
+</html>

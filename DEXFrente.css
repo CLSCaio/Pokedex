@@ -1,0 +1,305 @@
+/* PARTE DE FORA  DA POKEDEX */
+#conteudo_frente{
+    position: absolute;
+    transform-origin: right;
+}
+
+#conteudo_frente_1 {
+    height: 570px;
+    width: 320px;
+
+    border-radius: 5%;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+#dex_outside_borda {
+    height: 570px;
+    width: 320px;
+
+    border-radius: 5%;
+
+    background-color: black;
+
+    clip-path: polygon(40% 27%, 63% 16%, 100% 16%, 100% 100%, 0 100%, 0 27%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    
+    left: -1;
+
+    z-index: 10;
+}
+
+#dex_outside {
+    height: 566px;
+    width: 317px;
+
+    border-radius: 5%;
+
+    background-color: darkred;
+
+    clip-path: polygon(40% 27%, 63% 16%, 100% 16%, 100% 100%, 0 100%, 0 27%);
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin-left: 1px;
+
+    position: relative;
+}
+
+#seta_borda {
+    height: 60px;
+    width: 60px;
+    background-color: black;
+
+    margin-left: 10px;
+    margin-top: 90px;
+
+    clip-path: polygon(0 0, 0 100%, 40% 50%);
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#seta {
+    height: 52px;
+    width: 52px;
+    background-color: rgb(255, 238, 2);
+
+    margin-left: 1.5px;
+
+    clip-path: polygon(0 0, 0 100%, 40% 50%);
+
+    /* cursor: pointer; */
+}
+
+#dex_outside img {
+    width: 280px;
+    height: 320px;
+
+    position: absolute;
+
+    top: 27%;
+    left: 11%;
+}
+
+/* PARTE DE DENTRO  DA POKEDEX */
+
+#dex_inside_borda {
+    height: 570px;
+    width: 320px;
+
+    border-radius: 5%;
+
+    background-color: black;
+
+    clip-path: polygon(40% 27%, 63% 16%, 100% 16%, 100% 100%, 0 100%, 0 27%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+
+    left: 0;
+}
+
+#dex_inside {
+    height: 570px;
+    width: 317px;
+
+    border-radius: 5%;
+
+    background-color: darkred;
+
+    clip-path: polygon(40% 27%, 63% 16%, 100% 16%, 100% 100%, 0 100%, 0 27%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 1px;
+
+    position: relative;
+
+    padding-top: 160px;
+}
+
+#pesquisa {
+    display: flex;
+    transform: rotateY(180deg);
+}
+
+#busca {
+    text-align: center;
+    height: 50px;
+    width: 220px;
+    background-color: skyblue;
+    
+    transform: translateY(-20px);
+}
+
+#btn {
+    width: auto;
+    height: auto;
+
+    background: transparent;
+    outline: none;
+    border: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transform: rotateZ(-45deg) translateY(-10px);
+}
+
+#btn_lupa{
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+
+    background-color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lupa_vidro{
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+
+    background-color: rgb(162, 210, 230);
+
+    overflow: hidden;
+}
+
+#lupa_brilho {
+    height: 11px;
+    width: 11px;
+
+    border-radius: 50%;
+
+    background-color: rgba(255,255,255, 0.4);
+}
+
+#cabo_lupa {
+    width: 6px;
+    height: 24px;
+    
+    background-color: black;
+}
+
+#container_pokemons {
+    width: 272px;
+    height: 270px;
+
+    border: double 10px black;
+
+    transform: rotateY(180deg);
+
+    overflow: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.container_filter {
+    width: 98%;
+
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    border-bottom: solid 3px black;
+    border-right: solid 3px black;
+
+    cursor: pointer;
+}
+
+.pokenames {
+    font-size: 41px;
+    margin: 15px;
+
+    border: none;
+
+    background: transparent;
+    
+    text-align: center;
+}
+   
+.container_names {
+    width: 98%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom: solid 3px black;
+    border-right: solid 3px black;
+
+    cursor: pointer;
+}
+
+.container_filter:hover {
+    background-color:  rgb(162, 210, 230);
+}
+
+.container_names:hover {
+    background-color:  rgb(162, 210, 230);
+}
+
+/* ANIMAÇAO PARA ABRIR A POKEDEX */
+
+.abrirDex {
+    animation: abrirDex 7s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+
+}
+
+@keyframes abrirDex {
+    to {
+        transform: translate(29px) rotateY(180deg);
+    }
+}
+
+.fecharDex {
+    animation: fecharDex 7s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+
+@keyframes fecharDex {
+    from {
+        transform: translate(29px) rotateY(180deg);
+    }
+
+    to {
+        transform: translate(0) rotateY(0)
+    }
+}
+
+
