@@ -10,7 +10,7 @@ let green = document.getElementById('green')
 let tela = document.getElementById('tela')
 
 // FUNÇAO ABRIR DEX / FECHAR
-btn.addEventListener('click', function abrir_fechar_Dex() {
+function abrir_fechar_Dex() {
 
     // CORREÇAO DE BUG DA ABERTURA DA POKEDEX
     btn.removeEventListener('click', abrir_fechar_Dex)
@@ -82,8 +82,7 @@ btn.addEventListener('click', function abrir_fechar_Dex() {
     setTimeout(() => {
         btn.addEventListener('click', abrir_fechar_Dex)
     }, 3500)
-    
-})
+}
 
 // FUNÇOES PARA DESBUGAR A DEX
 tampa.onmouseover = function desbugarBotao1() {
@@ -104,3 +103,5 @@ setTimeout(() => {
         pokeball.src = '../Imgs/pokeball_troca_gif.png'
 }, 2400);
 
+btn.addEventListener("click", abrir_fechar_Dex)
+seta.addEventListener("click", abrir_fechar_Dex)

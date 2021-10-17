@@ -15,61 +15,20 @@ body {
     align-items: center;
 }
 
-.header_menu {
-    background-color: lavenderblush;
-    padding: 30px 0;
-    display: flex;
-    justify-content: space-around;
-    width: 100vw;
-    height: 50px;
-    background-color: skyblue; 
-}
-
-.header { 
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-
-    position: relative;
-}
-   
-.header h1 { font-size: 2.6em; z-index: 10; }
-
-#poke_gif {
-    position: absolute;
-}
-
-.pokeball_gif {
-    height: 90px;
-    width: 90px;
-
-    position: absolute;
-    left: 85%;
-    top: -12px;
-}
-
-.menu-opc { 
-    display: flex;
-    justify-content: center; 
-    gap: 30px;
-    font-size: 2em; 
-    align-self: center;
-}
-
-.opc { text-decoration: none; color: black;}
-
-.opc:hover {
-    box-shadow: 0 0 20px lavenderblush; 
-    border-radius: 5%;
-    background: lavenderblush
-}
-
 .pokedex {
+    margin-top: 5%;
+    margin-left: 12%;
     height: 580px;
     width: 380px;
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
+}
+
+@media (min-width: 450px) {
+    .pokedex {
+        margin-left: 0;
+    }
 }
 
 #conteudo_costas {
