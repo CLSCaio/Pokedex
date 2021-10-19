@@ -224,8 +224,12 @@
     align-items: flex-start;
 }
 
+#container_pokemons::-webkit-scrollbar {
+    display: none;
+}
+
 .container_filter {
-    width: 98%;
+    width: 100%;
 
     display: none;
     flex-direction: column;
