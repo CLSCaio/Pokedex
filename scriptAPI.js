@@ -1,5 +1,5 @@
 // FUNÇAO API + IMAGEM
-function start(pokemon = '', url_img_link = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/`) {
+function start(pokemon = '', url_img_link = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/`) {
     let url = `https://pokeapi.co/api/v2/pokemon/${pokemon}`
     axios.get(url)
         .then(resp => {
@@ -16,7 +16,7 @@ function start(pokemon = '', url_img_link = `https://raw.githubusercontent.com/P
             ident.innerHTML = `#${id}`
 
             // SETANDO IMAGEM
-            url_img = `${url_img_link}${id}.png`
+            url_img = `${url_img_link}${id}.gif`
             let tela_img = document.getElementById('tela_imgPkm')
             tela_img.src = url_img
 

@@ -1,13 +1,13 @@
 //  ATRALHOS
-let seta = document.getElementById('seta')
-let btn = document.getElementById('circulo_externo')
-let tampa = document.getElementById('conteudo_frente')
-let flip = document.getElementById('dex_outside_borda')
-let zIndexC = document.getElementById('parte_cima_borda')
-let blue = document.getElementById('blue')
-let yellow = document.getElementById('yellow')
-let green = document.getElementById('green')
-let tela = document.getElementById('tela')
+const seta = document.getElementById('seta')
+const btn = document.getElementById('circulo_externo')
+const tampa = document.getElementById('conteudo_frente')
+const flip = document.getElementById('dex_outside_borda')
+const zIndexC = document.getElementById('parte_cima_borda')
+const blue = document.getElementById('blue')
+const yellow = document.getElementById('yellow')
+const green = document.getElementById('green')
+const tela = document.getElementById('tela')
 
 // FUNÇAO ABRIR DEX / FECHAR
 function abrir_fechar_Dex() {
@@ -34,7 +34,7 @@ function abrir_fechar_Dex() {
         }, 2000)
 
         setTimeout(() => {
-            yellow.style.backgroundColor = 'yellow'
+            tela.backgroundImagem = 'https://br.pinterest.com/pin/472033604686141620/'
             tela.style.backgroundColor = 'lavender'
         }, 4000)
 

@@ -95,8 +95,8 @@ body {
 }
 
 #circulo_externo_borda {
-    height: 70px;
-    width: 70px;
+    height: 90px;
+    width: 90px;
 
     border-radius: 50%;
 
@@ -113,8 +113,8 @@ body {
 }
 
 #circulo_externo {
-    height: 68px;
-    width: 68px;
+    height: 88px;
+    width: 88px;
 
     border-radius: 50%;
 
@@ -126,8 +126,8 @@ body {
 }
 
 #circulo_interno_borda {
-    height: 60px;
-    width: 60px;
+    height: 80px;
+    width: 80px;
 
     border-radius: 50%;
 
@@ -139,8 +139,8 @@ body {
 }
 
 #circulo_interno {
-    height: 58px;
-    width: 58px;
+    height: 78px;
+    width: 78px;
 
     border-radius: 50%;
 
@@ -153,8 +153,13 @@ body {
     gap: 10px;
 
     overflow: hidden;
+    cursor: pointer;    
+}
 
-    cursor: pointer;
+#circulo_interno:active {
+    outline: none;
+    height: 73px;
+    width: 73px;
 }
 
 #brilho_vidro {
@@ -341,8 +346,8 @@ body {
 }
 
 #tela_imgPkm {
-    height: 250px;
-    width: 270px;
+    height: 70%;
+    width: 70%;
     transform: rotateY(180deg);
 
     position: absolute;
