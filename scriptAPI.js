@@ -92,7 +92,7 @@ function setando_nomes(valorT = 151, valorI = 0) {
                         e.preventDefault()
 
                         if (sprite_change.className == '') {
-                            urlS = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/`
+                            urlS = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/`
                             sprite_change.innerHTML = 'SHINY VERSION'
                             start(sprite_change.value, urlS)
                         }

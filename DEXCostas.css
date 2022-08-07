@@ -346,6 +346,7 @@ body {
 }
 
 #tela_imgPkm {
+    display: none;
     height: 70%;
     width: 70%;
     transform: rotateY(180deg);

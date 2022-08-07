@@ -8,6 +8,7 @@ const blue = document.getElementById('blue')
 const yellow = document.getElementById('yellow')
 const green = document.getElementById('green')
 const tela = document.getElementById('tela')
+const pokemon = document.getElementById('tela_imgPkm')
 
 // FUNÇAO ABRIR DEX / FECHAR
 function abrir_fechar_Dex() {
@@ -36,6 +37,7 @@ function abrir_fechar_Dex() {
         setTimeout(() => {
             tela.backgroundImagem = 'https://br.pinterest.com/pin/472033604686141620/'
             tela.style.backgroundColor = 'lavender'
+            pokemon.style.display = 'block'
         }, 4000)
 
         // FECHAR DEX    
@@ -66,6 +68,7 @@ function abrir_fechar_Dex() {
 
         
         setTimeout(() => {
+            pokemon.style.display = 'block'
             tela.style.backgroundColor = 'black'
             green.style.backgroundColor = 'black'
             flip.style.display = 'flex'
